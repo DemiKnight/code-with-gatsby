@@ -1,5 +1,8 @@
+import * as React from "react";
 
 
-function branding() {
-    return (<p>Hello</p>);
+const BrandingPage = () => {
+    return (<p>Branding</p>);
 }
+
+export default BrandingPage;
