@@ -2,7 +2,7 @@ import * as React from "react";
 
 
 const BrandingPage = () => {
-    return (<p>Branding</p>);
+    return (<main>Branding</main>);
 }
 
 export default BrandingPage;
