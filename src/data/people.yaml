@@ -9,7 +9,7 @@ people:
       - Java
   - name: Drew Morgan
     title: Benevolent Leader
-    imageName: drew.png
+    imageName: drew-profile-photo.png
     tags:
       - Git
       - C#
@@ -20,7 +20,7 @@ people:
       Drew is endlessly curious about science and technology and at university studied Physics for two years before swapping to Computer Science with Artificial Intelligence. He plays piano, tuba, guitar and clarinet, regularly goes climbing indoors and is a BSAC Dive Leader and assistant SCUBA diving instructor. Drew loves to share his experiences and will talk about anything with anyone.
   - name: Keiran Wilkinson
     title: Vice Benevolent Leader
-    imageName: keiran.png
+    imageName: keiran-profile-photo.png
     tags:
       - Git
       - PHP
@@ -31,7 +31,7 @@ people:
       When not working Keiran spends his time at Hackspace Manchester, working on various projects (most of which never get finished!). He also plays the Euphonium and enjoys anything aviation related, including travelling to various photography events around the country.
   - name: Jim Evans
     title: Secretary
-    imageName: jim.png
+    imageName: jim-profile-photo.png
     tags:
       - Git
       - PHP
@@ -42,7 +42,7 @@ people:
       When he's not rolling his eyes at teachers, Jim also runs a couple of CoderDojo kids coding clubs, helps out at hackathons and spends a ludicrous amount of time in the cinema. Jim also helps run a local beer festival and can be heard uttering phrases such as "malt backbone" and "resinous freshness".
   - name: Marie Fayard
     title: Equity Officer
-    imageName: marie.png
+    imageName: marie-profile-photo.png
     tags:
       - JavaScript
       - Python
@@ -52,7 +52,7 @@ people:
       In her spare time, she volunteers on open source projects and teaches coding to adults. She enjoys doing sports a lot (particularly yoga), going for long walks in the countryside, reading and learning all kinds of new things. She has recently taken up boxing and gets hit in the face a lot, but still thinks it's fun!
   - name: Sean O'Mahoney
     title: Publicity Officer
-    imageName: sean.png
+    imageName: sean-profile-photo.png
     tags:
       - TypeScript
       - C#
