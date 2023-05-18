@@ -3,7 +3,7 @@ import {ReactElement} from 'react';
 
 type LayoutProps = {
     animatedLogo?: boolean,
-    children: ReactElement[]
+    children: ReactElement[] | ReactElement
 }
 
 const DefaultLayout: React.FC<LayoutProps> = ({animatedLogo = false, children}: LayoutProps) => {
