@@ -6,6 +6,20 @@ import PeopleBoard from "../components/peopleBoard";
 import PeopleData from '../data/people.yaml';
 
 const AboutPage = () => {
+    // query {
+    //   allDataYaml {
+    //     edges {
+    //       node {
+    //         people {
+    //           name
+    //           title
+    //           imageName
+    //           description
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
     return (<DefaultLayout>
         <AboutText/>
         <PeopleBoard content={PeopleData.people}/>
