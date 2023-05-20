@@ -7,11 +7,15 @@ type LayoutProps = {
 }
 
 const DefaultLayout: React.FC<LayoutProps> = ({animatedLogo = false, children}: LayoutProps) => {
-
-    return (<main>
-        <h1>Code With</h1>
-        {children}
-    </main>);
+    // main-container
+    return (
+       <div className={"main-container"}>
+           {/*<aside>sidebar</aside>*/}
+           <main role="main" className="page-content" id="page-content">
+               <h1>Code With</h1>
+               {children}
+           </main>
+       </div>);
 }
 
 export default DefaultLayout;
