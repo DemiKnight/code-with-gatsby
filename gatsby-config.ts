@@ -9,7 +9,8 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap","gatsby-transformer-yaml", {
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-styled-components",
+    "gatsby-plugin-image", "gatsby-plugin-sitemap","gatsby-transformer-yaml", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
