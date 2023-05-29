@@ -1,9 +1,10 @@
 import * as React from 'react';
+import DefaultLayout from "../components/layout";
 
 
 const PeoplePage = () => {
 
-    return (<p>People</p>);
+    return (<DefaultLayout><p>People</p></DefaultLayout>);
 }
 
 export default PeoplePage;

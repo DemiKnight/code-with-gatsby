@@ -1,8 +1,9 @@
 import * as React from "react";
+import DefaultLayout from "../components/layout";
 
 
 const BrandingPage = () => {
-    return (<main>Branding</main>);
+    return (<DefaultLayout><p>Branding</p></DefaultLayout>);
 }
 
 export default BrandingPage;

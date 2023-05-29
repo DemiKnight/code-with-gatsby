@@ -1,8 +1,9 @@
 import * as React from 'react';
+import DefaultLayout from "../components/layout";
 
 const ResourcesPage = () => {
 
-    return (<p>Resources</p>);
+    return (<DefaultLayout><p>Resources</p></DefaultLayout>);
 }
 
 
