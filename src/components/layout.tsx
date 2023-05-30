@@ -25,7 +25,7 @@ const ContentContainer = styled.div`
 `;
 
 const MainContentContainer = styled.main`
-    flex-grow: 2;
+  flex-grow: 2;
   width: 100%;
 `;
 
