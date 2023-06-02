@@ -20,7 +20,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  width: 80vw;
+  width: 1;
   overflow: scroll;
 `;
 
