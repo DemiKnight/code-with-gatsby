@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {ReactElement} from 'react';
-import NarBar from "./Narbar";
+import NarBar from "./nav/Narbar";
 import styled from "styled-components";
 import Title from "./Title";
 
