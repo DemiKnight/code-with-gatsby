@@ -13,14 +13,16 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 100vh;
+  width: 100vw;
   //width: 20vw;
 `;
 
 const ContentContainer = styled.div`
+  flex-grow: 1;
+  
   display: flex;
   flex-direction: column;
   
-  width: 1;
   overflow: scroll;
 `;
 

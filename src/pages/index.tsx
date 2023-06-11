@@ -181,6 +181,24 @@ const IndexPage: React.FC<PageProps> = () => {
             </span>
                 </li>
             ))}
+            {links.map(link => (
+                <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+            <span>
+              <a
+                  style={linkStyle}
+                  href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
+              >
+                {link.text}
+              </a>
+              {link.badge && (
+                  <span style={badgeStyle} aria-label="New Badge">
+                  NEW!
+                </span>
+              )}
+              <p style={descriptionStyle}>{link.description}</p>
+            </span>
+                </li>
+            ))}
           </ul>
           <img
               alt="Gatsby G Logo"

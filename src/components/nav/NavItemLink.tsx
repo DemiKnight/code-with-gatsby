@@ -32,7 +32,7 @@ const NavText = styled.text`
 
 const NavLinkStyle = {color: "inherit", textDecoration: "none", width: "100%", height: "100%"}
 
-const NavItem: React.FC<NavItemProps> = (props, context) => {
+const NavItemLink: React.FC<NavItemProps> = (props, context) => {
     return (<NavItemContainer>
         <Link to={props.urlLocation} style={NavLinkStyle}>
             <FontAwesomeIcon icon={props.icon} color={Colours.White}/>
@@ -41,4 +41,4 @@ const NavItem: React.FC<NavItemProps> = (props, context) => {
     </NavItemContainer>)
 };
 
-export default NavItem;
+export default NavItemLink;
