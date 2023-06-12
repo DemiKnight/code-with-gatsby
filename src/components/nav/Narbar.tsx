@@ -24,8 +24,8 @@ const NavContainer = styled.nav<{$active?: boolean; }>`
   //flex-shrink: 0;
   //width: 15vw;
   width: 100%;
-  min-width: 15vw;
-  max-width: 17vw;
+  min-width: 270px;
+  max-width: 300px;
   
 
   border: red;
@@ -39,19 +39,17 @@ const NavItems = styled.ol`
   
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 8px;
-  width: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 `;
 
 const NavItemOld = styled.li`
   padding: 1em;
   background-color: ${Colours.LightPrimary};
-  //width: 100%;
   
   border: #333333;
   border-style: dashed;
-  //text-align: center;
 `;
 
 const NarBar = () => {

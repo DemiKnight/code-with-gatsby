@@ -4,16 +4,11 @@ import styled from "styled-components";
 import * as Colours from "../utils/Colours";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "gatsby";
+import {CSSProperties} from "react";
 
 const NavItemContainer = styled.li`
-  padding: 1em;
-  background-color: ${Colours.LightPrimary};
-
-  //width: 100%;
-
-  border: #333333;
-  border-style: dashed;
-  //text-align: center;
+  width: 85%;
+  box-sizing: border-box;
 `;
 
 type NavItemProps = {
@@ -22,22 +17,30 @@ type NavItemProps = {
     urlLocation: string
 }
 
-
 const NavText = styled.text`
   color: ${Colours.White};
   text-decoration: none;
-
-  padding-left: 10px;
 `;
 
-const NavLinkStyle = {color: "inherit", textDecoration: "none", width: "100%", height: "100%"}
+const StyledLink = styled(props => <Link {...props} />)`
+  color: inherit;
+  width: 100%;
+  display: block;
+  background-color: ${Colours.LightPrimary};
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+
+  padding: 15px 30px 15px 20px;
+  border: #333333;
+  border-style: dashed;
+`;
 
 const NavItemLink: React.FC<NavItemProps> = (props, context) => {
     return (<NavItemContainer>
-        <Link to={props.urlLocation} style={NavLinkStyle}>
-            <FontAwesomeIcon icon={props.icon} color={Colours.White}/>
+        <StyledLink to={props.urlLocation} >
+            <FontAwesomeIcon icon={props.icon} color={Colours.White} />
             <NavText>{props.text}</NavText>
-        </Link>
+        </StyledLink>
     </NavItemContainer>)
 };
 
