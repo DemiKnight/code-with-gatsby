@@ -26,8 +26,6 @@ const StyledLink = styled(props => <Link {...props} />)`
   border-radius: 0.75rem;
 
   padding: 15px 30px 15px 20px;
-  //border: #333333;
-  //border-style: dashed;
 `;
 
 export const NavIcon = styled(props => <FontAwesomeIcon {...props} />)`

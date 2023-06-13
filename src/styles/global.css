@@ -75,3 +75,7 @@ button, input[type="submit"], input[type="reset"] {
     outline: inherit;
     text-align: inherit;
 }
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
