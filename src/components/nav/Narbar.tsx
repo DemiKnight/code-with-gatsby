@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "gatsby";
 import styled from "styled-components";
 import * as Colours from '../utils/Colours';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -13,7 +12,9 @@ import {
     faTools,
     faUsers
 } from "@fortawesome/free-solid-svg-icons";
-import NavItemLink from "./NavItemLink";
+import NavItemLink from "./items/NavItemLink";
+import NavItemContainer from "./NavItemContainer";
+import NavOpenDyslexic from "./items/NavOpenDyslexic";
 
 const NavContainer = styled.nav<{$active?: boolean; }>`
   display: flex;
@@ -21,15 +22,10 @@ const NavContainer = styled.nav<{$active?: boolean; }>`
   
   background-color: ${Colours.DarkPrimary};
 
-  //flex-shrink: 0;
-  //width: 15vw;
   width: 100%;
   min-width: 270px;
   max-width: 300px;
   
-
-  border: red;
-  border-style: dashed;
 `;
 
 const NavLogo = styled.img``;
@@ -43,14 +39,14 @@ const NavItems = styled.ol`
   align-items: center;
   gap: 10px;
 `;
-
-const NavItemOld = styled.li`
-  padding: 1em;
-  background-color: ${Colours.LightPrimary};
-  
-  border: #333333;
-  border-style: dashed;
-`;
+//
+// const NavItemContainer = styled.li`
+//   padding: 1em;
+//   background-color: ${Colours.LightPrimary};
+//
+//   border: #333333;
+//   border-style: dashed;
+// `;
 
 const NarBar = () => {
 
@@ -69,12 +65,7 @@ const NarBar = () => {
             <NavItemLink icon={faComment} text={"Feedback"} urlLocation={"/feedback"} />
             <NavItemLink icon={faQuestion} text={"FAQ"} urlLocation={"/faq"} />
             <NavItemLink icon={faPalette} text={"Branding"} urlLocation={"/branding"} />
-            <NavItemOld>
-                <button>
-                    <FontAwesomeIcon icon={faFont} color={Colours.White} />
-                    <span>Open Dyslexic</span>
-                </button>
-            </NavItemOld>
+            <NavOpenDyslexic />
         </NavItems>
     </NavContainer>)
 }
