@@ -25,10 +25,11 @@ const NavContainer = styled.nav<{ $active?: boolean; }>`
 
   background-color: ${Colours.DarkPrimary};
 
+  overflow: scroll;
+  
   width: 100%;
   min-width: 270px;
   max-width: 300px;
-
 `;
 
 const NavItems = styled.ol`

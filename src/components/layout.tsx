@@ -9,12 +9,15 @@ type LayoutProps = {
     children: ReactElement[] | ReactElement
 }
 
-const AppContainer = styled.div`
+const AppContainer = styled.div<{openDyslexia: boolean}>`
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-  //width: 20vw;
+
+  font-family: ${props => props.openDyslexia ? "'OpenDyslexic', sans-serif" : "'Roboto', sans-serif"};
+  font-weight: 400;
+  text-align: left;
 `;
 
 const ContentContainer = styled.div`
@@ -31,9 +34,13 @@ const MainContentContainer = styled.main`
   width: 100%;
 `;
 
+type Theme = {
+    useOpenDyslexia: boolean
+}
+
 const DefaultLayout: React.FC<LayoutProps> = ({animatedLogo = false, children}: LayoutProps) => {
     return (
-       <AppContainer>
+       <AppContainer openDyslexia={false}>
            <NarBar />
            <ContentContainer>
                 <Title />

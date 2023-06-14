@@ -6,10 +6,12 @@ import {faFont} from "@fortawesome/free-solid-svg-icons";
 import {NavIcon, NavText} from "./NavItemLink";
 
 const OpenDyslexicButton = styled.button`
-  color: inherit;
+  //color: inherit;
   width: 100%;
   display: block;
-  background-color: ${Colours.LightPrimary};
+  //background-color: ${Colours.LightPrimary};
+  background-color: darkorange;
+  color: ${Colours.Black};
   box-sizing: border-box;
   border-radius: 0.75rem;
 
@@ -20,8 +22,8 @@ const NavOpenDyslexic = () => {
     return (
         <NavItemContainer>
             <OpenDyslexicButton >
-                <NavIcon icon={faFont} color={Colours.White} />
-                <NavText>Open Dyslexic</NavText>
+                <NavIcon icon={faFont} color={Colours.Black} />
+                <span>Open Dyslexic</span>
             </OpenDyslexicButton>
         </NavItemContainer>
     );
