@@ -27,7 +27,6 @@
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.10.0",
     "gatsby-plugin-mdx": "^5.10.0",
-    "gatsby-plugin-postcss": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-sitemap": "^6.10.0",
     "gatsby-plugin-styled-components": "^6.10.0",
@@ -35,11 +34,9 @@
     "gatsby-transformer-sharp": "^5.10.0",
     "gatsby-transformer-yaml": "^5.10.0",
     "js-yaml": "^4.1.0",
-    "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.10",
-    "tailwindcss": "^3.3.2"
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
